@@ -1,5 +1,18 @@
 # CS103 Lecture Notes
 
 1. [Welcome to CS103](CS103-01.ipynb)
-2. Python as a Calculator
-3. 
+2. [Python as a Calculator](CS103-02.ipynb)
+3. [Computing with Strings](CS103-03.ipynb)
+4. [Simple Programs](CS103-04.ipynb)
+5. [Values, Expressions, Variables](CS103-05.ipynb)
+6. [Statements](CS103-06.ipynb)
+7. [Functions](CS103-07.ipynb)
+8. [Lists. And Loops](CS103-08.ipynb)
+9. [Decision Structures](CS103-09.ipynb)
+10. [More on Loops](CS103-10.ipynb)
+11. [Complex Conditions](CS103-11.ipynb)
+12. [Collections](CS103-12.ipynb)
+13. [String Processing](CS103-13.ipynb)
+14. [File Processing](CS103-14.ipynb)
+15. [Calling Functions](CS103-15.ipynb)
+16. [Matrices](CS103-16.ipynb)
