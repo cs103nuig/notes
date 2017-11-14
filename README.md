@@ -16,3 +16,7 @@
 14. [File Processing](CS103-14.ipynb)
 15. [Calling Functions](CS103-15.ipynb)
 16. [Matrices](CS103-16.ipynb)
+17. [Objects and Classes](CS103-17.ipynb)
+18. [Rationals](CS103-18.ipynb)
+19. [Hamilton's Quaternions](CS103-19.ipynb)
+20. [RSA Encryption](CS103-20.ipynb)
