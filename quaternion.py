@@ -36,26 +36,17 @@ class Quaternion:
             raise TypeError("type mismatch: {} * {}"
                         .format(*[type(x).__name__ for x in [self, other]]))
 
-        o = Quaternion(1, 0, 0, 0)
-        i = Quaternion(0, 1, 0, 0)
-        j = Quaternion(0, 0, 1, 0)
-        k = Quaternion(0, 0, 0, 1)
-        table = [[o,  i,  j,  k],
-                 [i, -o,  k, -j],
-                 [j, -k, -o,  i],
-                 [k,  j, -i, -o]]
-
-        total = Quaternion(0, 0, 0, 0)
-        for r in range(4):
-            for s in range(4):
-                number = self.coeffs[r] * other.coeffs[s]
-                total += number * table[r][s]
-        return total
+        a, b = self.coeffs, other.coeffs
+        return Quaternion(
+            a[0]*b[0] - a[1]*b[1] - a[2]*b[2] - a[3]*b[3],
+            a[0]*b[1] + a[1]*b[0] + a[2]*b[3] - a[3]*b[2],
+            a[0]*b[2] - a[1]*b[3] + a[2]*b[0] + a[3]*b[1],
+            a[0]*b[3] + a[1]*b[2] - a[2]*b[1] + a[3]*b[0]
+        )
 
     def conjugate(self):
         "self^*"
-        coeffs = [self.coeffs[0]] + [-x for x in self.coeffs[1:]]
-        return Quaternion(*coeffs)
+        return Quaternion(self.coeffs[0], *[-x for x in self.coeffs[1:]])
 
     def norm_squared(self):
         "||self||^2"
