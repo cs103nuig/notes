@@ -68,14 +68,7 @@ class Quaternion:
         "self == other"
         if not isinstance(other, type(self)):
             return False
-        for x, y in zip(self.coeff, other.coeff):
+        for x, y in zip(self.coeffs, other.coeffs):
             if x != y:
                 return False
         return True
-
-o = Quaternion(1, 0, 0, 0)
-i = Quaternion(0, 1, 0, 0)
-j = Quaternion(0, 0, 1, 0)
-k = Quaternion(0, 0, 0, 1)
-q = o + 2*i + 3*j + 4*k
-w = Quaternion(1, 1, 1, 1)
