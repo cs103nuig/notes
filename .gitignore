@@ -1,3 +1,5 @@
 .ipynb_checkpoints
 .nbgrader.log
 __pycache__
+*.pdf
+usernames.txt
